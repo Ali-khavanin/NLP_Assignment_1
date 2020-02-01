@@ -21,7 +21,7 @@ def save_var(save_path, variable):
 lst_document = []
 line = ''
 document = ''
-with open('hamshahri_2000.txt', 'r') as input_file:
+with open('hamshahri_2000.txt', 'r', encoding='utf8') as input_file:
     while True:
         line = input_file.readline()
         document += line
@@ -32,7 +32,7 @@ with open('hamshahri_2000.txt', 'r') as input_file:
             document = ''
 
 save_var('all_documents_seperated', lst_document)
-#
-# dd = load_var('all_documents_seperated')
-#
-# print(dd[0])
+
+documents = load_var('all_documents_seperated')
+
+
